@@ -8,19 +8,23 @@ A state-of-the-art, animation-rich agency portfolio website built using **Vite +
 
 ### 1. Cinematic Loading Screen
 Featuring a randomized performance-based counter, elegant electric blue outer glowing logo, and an interactive loader track.
-![Cinematic Loading Screen](public/screenshots/loading_screen.png)
+![Cinematic Loading Screen]<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c830d37a-e012-45fa-b6a9-98da69dec7eb" />
+
 
 ### 2. High-Impact Parallax Hero
 Equipped with fluid parallax ambient orbs that follow cursor movements, bold Space Grotesk typography, and neon interactive call-to-actions.
-![High-Impact Parallax Hero](public/screenshots/hero_section.png)
+![High-Impact Parallax Hero]<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/09234769-ab27-4106-83f4-5a97e2d7ee21" />
+
 
 ### 3. Scroll-Snapping Team Showcases
 A custom full-screen viewport snapping vertical slide deck. Member portraits are accompanied by elastic, slow-settling skill vector badges (such as Flutter, React, Figma, and Node.js) layered with three-dimensional depth effects.
-![Full-Screen Team Snap Slider](public/screenshots/team_view.jpg)
+![Full-Screen Team Snap Slider]<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cdf479f5-0c0b-4aeb-b9d8-524e7c32b34d" />
+
 
 ### 4. Interactive Contact Form
 A highly responsive feedback/inquiry module engineered with customized inline CSS elements, dynamic halo ambient glows, and state-based interactive indicators.
-![Interactive Contact Form](public/screenshots/contact_section.png)
+![Interactive Contact Form]<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/471027ec-acf8-4092-8b07-39a776376544" />
+
 
 ---
 
@@ -56,7 +60,7 @@ A highly responsive feedback/inquiry module engineered with customized inline CS
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/smaxx-agency.git
+   git clone https://github.com/Santhosh7474/Smaxx-Agency.git
    cd smaxx-agency
    ```
 
