@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --navy: #0A0F1E;
+  --accent: #00D4FF;
+  --blue: #3B82F6;
+  --text: #F8FAFC;
+}
+
+@theme {
+  --color-navy: #0A0F1E;
+  --color-navy-light: #0D1428;
+  --color-navy-card: #111827;
+  --color-accent: #00D4FF;
+  --color-blue: #3B82F6;
+  --color-text: #F8FAFC;
+  --color-muted: #94A3B8;
+
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0A0F1E;
+  color: #F8FAFC;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0F1E;
+}
+::-webkit-scrollbar-thumb {
+  background: #00D4FF44;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00D4FF88;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #00D4FF 0%, #3B82F6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow utilities */
+.glow-accent {
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.3), 0 0 60px rgba(0, 212, 255, 0.1);
+}
+
+.glow-blue {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3), 0 0 60px rgba(59, 130, 246, 0.1);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+}
+
+/* Glass card */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Grid pattern background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Noise overlay */
+.noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Team section animations */
+@keyframes sparkleRotate {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(15deg) scale(1.1); }
+}
+
+@keyframes dotPulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+@keyframes scrollDot {
+  0% { transform: translateY(-100%); }
+  50% { transform: translateY(100%); }
+  100% { transform: translateY(300%); }
+}
+
+/* Hide scrollbar for horizontal scroll */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Section fade-in base state */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Team card icon ghost */
+.skill-icon-ghost {
+  position: absolute;
+  font-size: 4rem;
+  opacity: 0.04;
+  filter: blur(1px);
+  pointer-events: none;
+  user-select: none;
+  color: #00D4FF;
+}

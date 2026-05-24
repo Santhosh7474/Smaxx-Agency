@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <!-- Beautiful gradient matching Smaxx Agency brand colors -->
+    <linearGradient id="smaxx-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="logo-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background plate for high contrast in browser tabs -->
+  <rect width="48" height="48" rx="14" fill="#0A0F1E" />
+  <rect width="46" height="46" x="1" y="1" rx="13" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+  
+  <!-- Futuristic sharp 'S' -->
+  <path
+    d="M15 13H33V20H22V23H33V35H15V28H26V25H15V13Z"
+    fill="url(#smaxx-grad)"
+    filter="url(#logo-glow)"
+  />
+  <!-- Top inner stroke for depth -->
+  <path
+    d="M15.5 13.5H32.5V19.5H21.5V23.5H32.5V34.5H15.5V27.5H25.5V24.5H14.5V13.5H15.5"
+    stroke="#FFFFFF"
+    stroke-width="0.75"
+    opacity="0.15"
+  />
+</svg>
